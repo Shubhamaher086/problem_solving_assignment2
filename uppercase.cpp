@@ -12,7 +12,14 @@ int main()
 
     for (int i = 0; i < str.length(); i++)          //traverse the string
     {
+        if(str[i]>='a' || str[i]>='z')              //check for lower case are available or not
+    {
         str[i] = str[i]-32;                         //change to upper case 
+    }
+    else
+    {
+        str[i] = str[i];
+    }
     }
 
     cout <<endl;
